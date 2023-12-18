@@ -19,6 +19,8 @@ while_: 'while' expr LB inss RB;
 sizel: SIZE VAR;
 SIZE: '#';
 
+NOTE: [A-G][0-9];
+
 query: VAR LS expr RS;
 
 assign: VAR ASSIGN expr;
@@ -59,13 +61,19 @@ expr: expr MUL expr
     |   STRING
     |   NUM
     |   list
-    |   sizel;
+    |   sizel
+    |   query
+    |   NOTE
+    |   LP expr RP;
 
 LB: '|:';
 RB: ':|';
 
 LS: '[';
 RS: ']';
+
+LP: '(';
+RP: ')';
 
 MUL: '*';
 DIV: '/';
@@ -83,3 +91,7 @@ LET: '<=';
 NUM: '-'?[0-9]+('.'[0-9]+)?;
 STRING: '"' ('\\' . | ~('\\' | '"'))* '"';
 VAR: [a-zA-Z][a-zA-Z0-9]*;
+
+COMMENT: '##' ~[ \r\n]* -> skip;
+
+WS: [ \t\r\n]+ -> skip;
