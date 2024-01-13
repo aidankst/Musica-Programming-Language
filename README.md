@@ -32,9 +32,9 @@ Clone the repository containing the ANTLR grammar and generated code to your loc
 
 **Step 2: Generate the Parser**
 If you haven't already, generate the parser using ANTLR. You can do this by running the following command from the project root directory:
-'''
+```
 antlr4 -Dlanguage=Python3 -no-listener -visitor Musica.g
-'''
+```
 This will generate the necessary lexer and parser classes for python.
 
 **Run the Program**
