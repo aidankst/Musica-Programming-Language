@@ -1,0 +1,15 @@
+Hanoi |:
+    if size(src) > 0 |:
+        hanoi (size(src) - 1) src aux dst
+        note <- src[#src]
+        8< src[#src]
+        dst << note
+        <w> note
+        hanoi (size(src) - 1) aux dst src
+    :|
+|:
+    note <- {C D E F G}
+    dst <- {}
+    aux <- {}
+    hanoi #note note dst aux
+:|
