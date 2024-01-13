@@ -40,15 +40,15 @@ This will generate the necessary lexer and parser classes for python.
 **Run the Program**
 Run the program using the following command:
 
-'''
+```
 python3 Musica.py music_language_sample.musica
-'''
+```
 
 or 
 
-'''
+```
 python3 Musica.py music_language_sample.musica Hanoi
-'''
+```
 
 ## Conclusion:
 The development of a double interpreter for Musica is a challenging but rewarding project that will provide significant benefits to the music community. The project will also give us valuable experience in programming and music theory.
