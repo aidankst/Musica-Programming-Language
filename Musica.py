@@ -12,9 +12,9 @@ tree = parser.root()
 
 print(tree)
 
-# if len(sys.argv) > 2:
-#     visitor = Visitor(sys.argv[2])
-# else:
-#     visitor = Visitor()
+if len(sys.argv) > 2:
+    visitor = Visitor(sys.argv[2])
+else:
+    visitor = Visitor()
     
-# visitor.visit(tree)
+visitor.visit(tree)
