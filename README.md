@@ -27,4 +27,28 @@ This project will develop a double interpreter for Musica. The first interpreter
 - The interpreter should handle errors gracefully and provide informative error messages
 
 ## How to run the project?
+**Step 1: Clone the Repository**
+Clone the repository containing the ANTLR grammar and generated code to your local machine.
 
+**Step 2: Generate the Parser**
+If you haven't already, generate the parser using ANTLR. You can do this by running the following command from the project root directory:
+'''
+antlr4 -Dlanguage=Python3 -no-listener -visitor Musica.g
+'''
+This will generate the necessary lexer and parser classes for python.
+
+**Run the Program**
+Run the program using the following command:
+
+'''
+python3 Musica.py music_language_sample.musica
+'''
+
+or 
+
+'''
+python3 Musica.py music_language_sample.musica Hanoi
+'''
+
+## Conclusion:
+The development of a double interpreter for Musica is a challenging but rewarding project that will provide significant benefits to the music community. The project will also give us valuable experience in programming and music theory.
