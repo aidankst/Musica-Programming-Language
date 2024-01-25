@@ -37,7 +37,7 @@ antlr4 -Dlanguage=Python3 -no-listener -visitor Musica.g
 ```
 This will generate the necessary lexer and parser classes for python.
 
-**Run the Program**
+**Step 3: Run the Program**
 Run the program using the following command:
 
 ```
